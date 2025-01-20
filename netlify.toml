@@ -1,0 +1,12 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+  base = "/"
+
+[build.environment]
+  NETLIFY_SITE_ID = "595370e6-c0d1-481f-a076-eaad66c98bce"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
